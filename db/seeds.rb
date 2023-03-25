@@ -6,6 +6,8 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+return if Skill.find_by(name: "Ruby").present?
+
 ruby = Skill.create(name: "Ruby")
 rails = Skill.create(name: "Rails")
 javascript = Skill.create(name: "JavaScript")
